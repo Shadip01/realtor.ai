@@ -1,20 +1,23 @@
 {
-  "name": "vite-template-solid",
-  "version": "0.0.0",
-  "description": "",
-  "type": "module",
+  "name": "Realtor Ai",
+  "version": "1.0.0",
+  "description": "A realtor website",
+  "main": "index.js",
+  "homepage": "https://Shadip01.github.io/realtor.ai",
   "scripts": {
-    "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "license": "MIT",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vite": "^6.0.0",
     "vite-plugin-solid": "^2.11.1"
   },
   "dependencies": {
+    "solid-app-router": "^0.4.2",
     "solid-js": "^1.9.3"
   }
 }

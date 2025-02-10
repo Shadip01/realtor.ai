@@ -1,8 +1,11 @@
 import { createSignal } from 'solid-js';
+import { useNavigate } from 'solid-app-router';
 import logo from './logo.png'; // Import logo
 import './LoginForm.css'; // Import CSS
 
+
 export default function Auth() {
+  const navigate = useNavigate();
   const [email, setEmail] = createSignal('');
   const [password, setPassword] = createSignal('');
   const [name, setName] = createSignal('');
@@ -23,7 +26,7 @@ export default function Auth() {
 
     setIsSubmitting(true);
     try {
-      const response = await fetch(`https://your-api.com${endpoint}`, {
+      const response = await fetch(`https://watingapi.com${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
@@ -32,7 +35,8 @@ export default function Auth() {
       if (response.ok) {
         setMessage(`Success: ${data.message}`);
         if (isLogin()) {
-          localStorage.setItem('token', data.token); // Save token
+          localStorage.setItem('token', data.token)
+          navigate('/home'); // Save token
         }
       } else {
         setMessage(`Error: ${data.error || 'Unknown error'}`);
