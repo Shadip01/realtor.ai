@@ -1,0 +1,217 @@
+/* index.css */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* App.css */
+  .app-container {
+    font-family: 'Arial, sans-serif';
+  }
+  
+  .widgets-container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  /* Header.css */
+  .header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .header-logo h1 {
+    margin: 0;
+  }
+  
+  .header-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .header-nav-list li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .header-user-icon {
+    font-size: 1.5em;
+  }
+  
+  /* ListingCard.css */
+  .listing-card {
+    width: 320px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .listing-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  
+  .listing-details {
+    padding: 15px;
+  }
+  
+  .listing-details h4 {
+    margin: 0 0 5px;
+  }
+  
+  .listing-details p {
+    margin: 0;
+    color: #555;
+  }
+  
+  /* ListingsSection.css */
+  .listings-section {
+    padding: 30px;
+  }
+  
+  .listings-section h2 {
+    margin: 0 0 20px;
+  }
+  
+  .listings-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+      align-items: center;
+  }
+  .listings-arrow {
+    display: 'flex';
+    alignItems: 'center';
+    justifyContent: 'center';
+    width: '40px';
+    height: '40px',
+    border: '1px solid #ccc',
+    borderRadius: '50%',
+    marginLeft: '10px',
+    cursor: 'pointer'
+  }
+  
+  /* Reminders.css */
+  .reminders {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    width: 350px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .reminders h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+  }
+  
+  .reminders-content {
+      display: 'flex';
+      justify-content: 'space-between'
+  }
+  
+  .reminders-due-date {
+    margin: 5px 0;
+    color: #777;
+  }
+  
+  .reminders-dots {
+    display: 'flex',
+    flex-direction: 'column',
+    align-items: 'center',
+    justify-content: 'space-between'
+  }
+  
+  .dot {
+      width: '8px',
+      height: '8px',
+      borderRadius: '50%',
+      backgroundColor: '#bbb'
+  }
+  
+  /* Calendar.css */
+  .calendar {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .calendar-header h4 {
+    margin: 0;
+    font-size: 1.1em;
+  }
+  
+  .calendar-navigation {
+    display: flex;
+  }
+  
+  .nav-arrow {
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .calendar-month {
+    text-align: center;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .calendar-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  
+  .calendar-table th {
+    padding: 8px;
+    font-weight: normal;
+    color: #777;
+    font-size: 0.9em;
+  }
+  
+  .today {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #e91e63;
+    color: #fff;
+  }
+  
