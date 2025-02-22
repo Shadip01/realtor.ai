@@ -33,6 +33,21 @@ function HomePage() {
       agency: 'Luxury Homes Group',
       openHouse: 'Open: Sat 1-3pm (2/22)',
     },
+    {
+      id: 3,
+      image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop',
+      price: 325000,
+      beds: 1,
+      baths: 2,
+      sqft: 1650,
+      address: '123 Oak Avenue',
+      city: 'Caldwell',
+      state: 'NJ',
+      zip: '07006',
+      type: 'Townhouse for sale',
+      agency: 'Luxury Homes Group',
+      openHouse: 'Open: fri 1-3pm (2/22)',
+    },
   ];
 
   return (
