@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Search, Home, MapPin, Bed, Bath, ChevronDown, Heart, X } from 'lucide-react';
+import { Search, Home, MapPin, Bed, Bath, ChevronDown, Heart } from 'lucide-react';
 
 function HomePage() {
   const listings = [
@@ -43,7 +43,7 @@ function HomePage() {
           <div className="flex justify-between h-16">
             <Link to="/" className="flex items-center">
               <Home className="h-8 w-8 text-blue-600" />
-              <span className="ml-2 text-xl font-bold text-blue-600">HomeFind</span>
+              <span className="ml-2 text-xl font-bold text-blue-600">realtor.ai</span>
             </Link>
             <div className="flex items-center space-x-4">
               <Link
