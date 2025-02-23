@@ -46,7 +46,7 @@ function HomePage() {
       zip: '07006',
       type: 'Townhouse for sale',
       agency: 'Luxury Homes Group',
-      openHouse: 'Open: fri 1-3pm (2/22)',
+      openHouse: 'Open: Fri 1-3pm (2/22)',
     },
   ];
 
